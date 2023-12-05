@@ -29,7 +29,9 @@ app.listen(port, () => {
 
 const Employee = require("./models/employee");
 const Attendance = require("./models/attendance");
-
+app.get("/employees", async (req, res) => {
+   res.send({msg:"successfull connect"})
+});
 //endpoint to register a employee
 app.post("/addEmployee", async (req, res) => {
   try {
