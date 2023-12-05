@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const moment = require("moment");
 
 const app = express();
-const port = 8000;
+const port = 9000;
 const cors = require("cors");
 app.use(cors());
 
@@ -24,7 +24,7 @@ mongoose
   });
 
 app.listen(port, () => {
-  console.log("Server is running on port 8000");
+  console.log("Server is running on port 9000");
 });
 
 const Employee = require("./models/employee");
